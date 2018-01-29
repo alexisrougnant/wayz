@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>WAYZ</title>
+        <link rel="stylesheet" href="./style.css">
+        <script type="text/javascript" src="./js/abilia.js"></script>
+        <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src = "./js/fastclick.js"></script>
+
+        <script type="text/javascript" src="./js/phaser.js"></script>
+        <script type="text/javascript" src="./js/pathCreation.js"></script>
+        <script type="text/javascript" src="./js/evaluation.js"></script>
+
+        <script type="text/javascript" src="./js/bootState.js"></script>
+        <script type="text/javascript" src="./js/chooseActivityState.js"></script>
+        <script type="text/javascript" src="./js/loadState.js"></script>
+        <script type="text/javascript" src="./js/menuState.js"></script>
+    	<script type="text/javascript" src="./js/playState.js"></script>
+    	<script type="text/javascript" src="./js/gameOverState.js"></script>
+        <script type="text/javascript" src="./js/scoringState.js"></script>
+    	<script type="text/javascript" src="./js/main.js"></script>
+        
+        
+        <link rel="icon" type="image/png" href="/favicon.png" />
+
+
+    </head>
+    <body>
+    <div id="game">
+        
+    </div>
+    <!-- first screen that displays the logo of the game, it is then destroyed after the game is instantiated and the first state is started -->
+        <div id="wayz-screen" >
+            <img  id="wayz-img" src="./img/ui/wayz.png">
+        </div>
+    <!-- fullscreen button -->
+        <img id="icon-fs" src="./img/ui/fullscreenBtn.png">
+        <!-- orientation alert -->
+        <div id='orientation-alert'>
+            <img id="rotate-device" src="./img/ui/rotate-device.png">
+        </div>
+        <!-- video div, it is used as a workaround as the video using phaser is not well spported on tablet for some mysterious reasons -->
+        <div id='videoDiv'>
+            <img id="videoCommand" src='./img/ui/playBtn.png'>
+        </div>
+
+        <div id='inch' style='height: 1in; left: -100%; position: absolute; top: -100%; width: 1in;'></div>    
+    </body>
+</html>
